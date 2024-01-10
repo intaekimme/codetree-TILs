@@ -15,12 +15,11 @@ public class Main {
     static Queue<Info> que = new ArrayDeque();
 
     public static void main(String[] args) throws Exception {
-        init();
         process();
         printMap();
     }// end of main
 
-    public static void init() throws IOException {
+    public static void process() throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         StringTokenizer st = new StringTokenizer(br.readLine());
@@ -41,11 +40,12 @@ public class Main {
             st = new StringTokenizer(br.readLine());
             info = new Info(Integer.parseInt(st.nextToken()) - 1, st.nextToken());
             que.offer(info);
+            dfs();
         }
     }// end of init
 
-    public static void process() throws Exception {
-        // bfs
+    public static void dfs() throws Exception {
+        // dfs
         while (!que.isEmpty()) {
             Info in = que.poll();
 
