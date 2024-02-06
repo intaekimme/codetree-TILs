@@ -21,7 +21,10 @@ public class Main {
     // idx자리에 수를 채우는 함수
     public static void func(int idx) {
         if (idx == N) {
-            System.out.println(arr.get(0) + " " + arr.get(1));
+            for (int i = 0; i < arr.size(); i++) {
+                System.out.print(arr.get(i) + " ");
+            }
+            System.out.println();
             return;
         }
 
