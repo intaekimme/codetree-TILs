@@ -43,15 +43,15 @@ public class Main {
 
                     if (bCnt == 5) {
                         WIN = 1;
-                        posX = i + dx[dir] * 2;
-                        posY = j + dy[dir] * 2;
+                        posX += i + dx[dir] * 2;
+                        posY += j + dy[dir] * 2;
                         break here;
                     }
 
                     if (wCnt == 5) {
                         WIN = 2;
-                        posX = i + dx[dir] * 2;
-                        posY = j + dy[dir] * 2;
+                        posX += i + dx[dir] * 2;
+                        posY += j + dy[dir] * 2;
                         break here;
                     }
 
