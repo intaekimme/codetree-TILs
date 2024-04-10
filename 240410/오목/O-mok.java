@@ -22,8 +22,8 @@ public class Main {
         int bCnt = 0;
         int wCnt = 0;
         int WIN = 0;
-        int posX = 0;
-        int posY = 0;
+        int posX = 1;
+        int posY = 1;
 
         here: for (int i = 0; i < N; i++) {
             for (int j = 0; j < N; j++) {
@@ -50,8 +50,8 @@ public class Main {
 
                     if (wCnt == 5) {
                         WIN = 2;
-                        posX = 1 + i + dx[dir] * 2;
-                        posY = 1 + j + dy[dir] * 2;
+                        posX = i + dx[dir] * 2;
+                        posY = j + dy[dir] * 2;
                         break here;
                     }
 
